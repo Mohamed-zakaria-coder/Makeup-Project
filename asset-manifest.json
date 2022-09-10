@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.bbc7ce59.css",
-    "main.js": "./static/js/main.a072290e.js",
+    "main.css": "./static/css/main.c8d05c9f.css",
+    "main.js": "./static/js/main.560004a7.js",
     "static/media/pexels-emma-bauso-2253835.jpg": "./static/media/pexels-emma-bauso-2253835.344784fadba9ba2e56c1.jpg",
     "static/media/2.a4899794.png": "./static/media/2.a4899794.a4899794c9e771b6e181.png",
     "static/media/1.00141963.png": "./static/media/1.00141963.00141963d1ddba4b05bd.png",
     "static/media/4.16ba0907.png": "./static/media/4.16ba0907.16ba0907b5d3c0cc0182.png",
     "static/media/5.ee1c89f9.png": "./static/media/5.ee1c89f9.ee1c89f913a1894de676.png",
     "index.html": "./index.html",
-    "main.bbc7ce59.css.map": "./static/css/main.bbc7ce59.css.map",
-    "main.a072290e.js.map": "./static/js/main.a072290e.js.map"
+    "main.c8d05c9f.css.map": "./static/css/main.c8d05c9f.css.map",
+    "main.560004a7.js.map": "./static/js/main.560004a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbc7ce59.css",
-    "static/js/main.a072290e.js"
+    "static/css/main.c8d05c9f.css",
+    "static/js/main.560004a7.js"
   ]
 }
