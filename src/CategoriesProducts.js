@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
-import {NavLink} from 'react-router-dom';
 import Data from './Data'; 
 import { motion } from 'framer-motion'
 const CategoriesProducts = () => {
@@ -15,25 +14,25 @@ const CategoriesProducts = () => {
     setLoading(true)
     fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${params.product_type}`)
       .then(res => res.json())
-      .then(data => (setFilteredProducts(data),setProducts(data)))
+      .then(data => ((setFilteredProducts(data), setProducts(data))))
     setLoading(false)
     setSelectCategory('all')
     setSelectBrand('all')
-  }, [])
+  }, [params.product_type])
   
   function HandleFilters(){
-      if(selectBrand != "all"){
-        setFilteredProducts(products.filter(product => product.brand == selectBrand)
+      if(selectBrand !== "all"){
+        setFilteredProducts(products.filter(product => product.brand === selectBrand)
         )
       }else{
         setFilteredProducts(products)
       }
-      if(selectCategory != "all"){
-        setFilteredProducts(products.filter(product => product.category == selectCategory)
+      if(selectCategory !== "all"){
+        setFilteredProducts(products.filter(product => product.category === selectCategory)
         )
       }
-      if(selectCategory != "all" && selectBrand !="all"){
-        setFilteredProducts(products.filter(product => product.category == selectCategory && product.brand == selectBrand))
+      if(selectCategory !== "all" && selectBrand !=="all"){
+        setFilteredProducts(products.filter(product => product.category === selectCategory && product.brand === selectBrand))
       }
   }
  
@@ -57,7 +56,7 @@ const CategoriesProducts = () => {
   return (
     <div className='category-products-container'>
       <hr></hr>
-      {productsPageHeading.map(product => {
+      { productsPageHeading.map(product => {
         return (
           <h3 className='product-page-name'>{product.name}s</h3>
         )
@@ -116,7 +115,7 @@ const CategoriesProducts = () => {
                   class="products-card"
                   onClick={() => Navigate(`/products/${product.product_type}/${product.id}`)}>
                   <div className='img-container'>
-                    <img src={product.api_featured_image}/></div>
+                    <img src={product.api_featured_image} alt={product.name}/></div>
                   <p className='product-name product'>{product.name}</p>
                   <p className='product-brand product'>Brand:{product.brand}</p>
                   <p className='product-category product'>Category:{product.category}</p>

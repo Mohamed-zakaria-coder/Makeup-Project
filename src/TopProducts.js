@@ -1,5 +1,5 @@
 import React, { useEffect, useState}  from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 
 export default function TopProducts() {
     const [topProductsData, setTopProductsData] = useState([])
@@ -20,7 +20,7 @@ export default function TopProducts() {
           
             <div className='top-products-info' onClick={() => Navigate(`/products/${product.product_type}/${product.id}`)}>
                 <div className='top-productsImg-container'>
-                <img src={product.image_link}/>
+                <img src={product.image_link} alt={product.name}/>
                 </div>
                 <h5 className='top-products-name'>{product.name}</h5>
                 <div>Brand:{product.brand}</div>

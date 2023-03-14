@@ -332,6 +332,11 @@
   font-size: 15px;
   margin-bottom: 80px;
 }
+.no-products{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 22px;
+}
 /* End Specific */
 /* Start CategoryProducts */
   .select-parent{

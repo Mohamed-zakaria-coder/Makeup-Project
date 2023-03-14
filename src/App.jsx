@@ -1,8 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './File.css';
 import Navbar from './Navbar';
-import ImageContent from './ImageContent';
-import TopProducts from './TopProducts';
 import Footer from './Footer';
 import List from './List';
 import { Route, Routes } from 'react-router-dom';
