@@ -8,7 +8,7 @@ import {AiOutlineArrowRight} from 'react-icons/ai'
 import {NavLink} from 'react-router-dom';
 import {motion} from 'framer-motion'
 const ImageContent = () => {
-
+ 
   return (
     <div className='ImageContent-container'>
       <div
