@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const List = (props) => {
     return (
         <div className='list-container'>
-            <NavLink to="/home" className='navLink' >
+            <NavLink to="/Makeup-Project" className='navLink' >
             <h2 onClick={props.showListComp}>Home </h2>
             </NavLink>
             <NavLink to="/categories" className='navLink' onClick={props.showListComp}>
