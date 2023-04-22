@@ -1,16 +1,16 @@
-import React from 'react'
-import { BsList } from 'react-icons/bs'
-import { BiSearch } from 'react-icons/bi'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { BsList } from "react-icons/bs";
+import { BiSearch } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <div className='navbar-container'>
-      <BsList className='navbar-list-icon' onClick={props.showListComp}/>
-      <NavLink to='/home' className="navLink">
-      <h3 className='navbar-heading'>Makeup Online</h3>
+    <div className="navbar-container">
+      <BsList className="navbar-list-icon" onClick={props.showListComp} />
+      <NavLink to="/home" className="navLink">
+        <h3 className="navbar-heading">Makeup Online</h3>
       </NavLink>
-      <BiSearch className='navbar-search-icon'/>
+      <BiSearch className="navbar-search-icon" />
     </div>
-  )
+  );
 }
