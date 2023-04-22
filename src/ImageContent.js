@@ -1,4 +1,9 @@
 import React from 'react';
+import img from "./images/1.00141963.png"
+import img1 from "./images/pexels-emma-bauso-2253835.jpg"
+import img2 from "./images/4.16ba0907.png"
+import img3 from  "./images/2.a4899794.png"
+import img4 from "./images/5.ee1c89f9.png"
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {NavLink} from 'react-router-dom';
 import {motion} from 'framer-motion'
@@ -9,7 +14,7 @@ const ImageContent = () => {
       <div
         className='images-parent'
         >
-        <motion.img src={require("./images/1.00141963.png")} alt="Makeup-img" className='img-1'  initial={{
+        <motion.img src={img} alt="Makeup-img" className='img-1'  initial={{
         x: "-100vw"
       }}
         animate={{
@@ -19,7 +24,7 @@ const ImageContent = () => {
         
         duration: 1.8    
         }}/>
-        <motion.img src={require("./images/pexels-emma-bauso-2253835.jpg")} alt="Makeup-img" className='img-2' initial={{
+        <motion.img src={img1} alt="Makeup-img" className='img-2' initial={{
         x: "-100vw"
       }}
         animate={{
@@ -29,7 +34,7 @@ const ImageContent = () => {
         
         duration: 1.5    
         }}/>
-        <motion.img src={require("./images/4.16ba0907.png")} alt="Makeup-img" className='img-3' initial={{
+        <motion.img src={img2} alt="Makeup-img" className='img-3' initial={{
         x: "-100vw"
       }}
         animate={{
@@ -39,7 +44,7 @@ const ImageContent = () => {
         
         duration: 0.8  
         }}/>
-        <motion.img src={require("./images/2.a4899794.png")} alt="Makeup-img" className='img-4' initial={{
+        <motion.img src={img3} alt="Makeup-img" className='img-4' initial={{
         x: "-100vw"
       }}
         animate={{
@@ -48,7 +53,7 @@ const ImageContent = () => {
         transition={{
         duration: 2.1 
         }}/>
-        <motion.img src={require("./images/5.ee1c89f9.png")} alt="Makeup-img" className='img-5' initial={{
+        <motion.img src={img4} alt="Makeup-img" className='img-5' initial={{
         x: "-100vw"
       }}
         animate={{
