@@ -20,7 +20,7 @@ function App() {
        
        <Footer />
        <Routes>
-        <Route path ='/home' element={<Home />} />
+        <Route path ='/' element={<Home />} />
         <Route path ='/categories' element={<Categories/>} />
         <Route path='/products/:product_type' element={<CategoriesProducts/>} />
         <Route path= '/products/:product_type/:id' element={<SpecificProduct/>} />

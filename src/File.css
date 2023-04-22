@@ -4,6 +4,17 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Start Scroll-bar */
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: #ddd;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+/* End Scroll-bar */
 
 /* Start Navbar */
 .navbar-container{
@@ -36,7 +47,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 4px;
-  height: 470px;
 }
 .ImageContent-container img{
   width: 100%;
