@@ -7,7 +7,7 @@ export default function Navbar(props) {
   return (
     <div className='navbar-container'>
       <BsList className='navbar-list-icon' onClick={props.showListComp}/>
-      <NavLink to='/' className="navLink">
+      <NavLink to='/home' className="navLink">
       <h3 className='navbar-heading'>Makeup Online</h3>
       </NavLink>
       <BiSearch className='navbar-search-icon'/>
